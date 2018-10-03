@@ -100,7 +100,8 @@ while true; do
 
 			top_height
 			local_height
-		date +"%Y-%m-%d %H:%M:%S || ${green}Local: $CHECKSRV, Highest: $HEIGHT"
-		sleep 60
+			#uncomment if you want output
+		#date +"%Y-%m-%d %H:%M:%S || ${green}Local: $CHECKSRV, Highest: $HEIGHT"
+		sleep 120
 done
 
