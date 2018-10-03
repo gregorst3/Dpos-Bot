@@ -16,6 +16,8 @@ This screen every 60 seconds should check if server is available and synced.
 
 Modify the following:
 
+REMEMBER: Ensure you have permission to do api queries (whitelist the ip of the machine where this script is running, into the api section of dpos config)
+
 ```SRV=IPSERVER:PORT
 MESSAGE="Server SERVERNAME Is not synced with the network"
 MEX="Server SERVERNAME Is DOWN"
