@@ -32,4 +32,4 @@ To start the script use
 ```
 screen bash DposScript.sh
 ```
-If you use it for dpos with old core (<1.0) please uncomment from line 71 to 99 and put a # from line 37 to 66
+If you use it for dpos with old core (<1.0) please use DposScript0.9.sh
