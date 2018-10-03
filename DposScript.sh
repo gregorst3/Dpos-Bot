@@ -104,4 +104,3 @@ while true; do
 		date +"%Y-%m-%d %H:%M:%S || ${green}Local: $CHECKSRV, Highest: $HEIGHT"
 		sleep 120
 done
-
