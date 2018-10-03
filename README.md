@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/gregorst3/Dpos-Bot/master/DposScript.sh
 ```
 How to use this script:
 
-This screen every 60 seconds should check if server is available and synced.
+This screen every 120 seconds should check if server is available and synced.
 
 `nano DposScript.sh`
 
