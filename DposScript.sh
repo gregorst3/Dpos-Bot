@@ -4,7 +4,7 @@ MESSAGE="Server SERVERNAME Is not synced with the network"
 MEX="Server SERVERNAME Is DOWN"
 CHATID=
 apiToken=
-
+#Tested on Lisk and Rise
 TITLE="ATTENTION"
 ACCESS_TOKEN="PUSHBULLETTOKEN"
 
