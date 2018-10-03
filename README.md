@@ -8,6 +8,11 @@ Pre-Requirements:
 sudo apt-get update && sudo apt-get install jq -y
 wget https://raw.githubusercontent.com/gregorst3/Dpos-Bot/master/DposScript.sh
 ```
+If dpos uses an old core :
+```
+wget https://raw.githubusercontent.com/gregorst3/Dpos-Bot/master/DposScript0.9.sh
+```
+
 How to use this script:
 
 This screen every 120 seconds should check if server is available and synced.
