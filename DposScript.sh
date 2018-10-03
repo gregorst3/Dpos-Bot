@@ -69,34 +69,34 @@ while true; do
 
 
 #Old core < 1.0
-#top_height(){
-#        HEIGHT=$(curl -s http://$SRV/api/peers | jq '.peers[].height' | sort -nu | tail -n1)
-
-#        while [ -z "$HEIGHT" ]
-  #     do
-    #            sleep 1
-    #            HEIGHT=$(curl -s http://$SRV/api/peers | jq '.peers[].height' | sort -nu | tail -n1)
-    #    done
+#	top_height(){
+#	        HEIGHT=$(curl -s http://$SRV/api/peers | jq '.peers[].height' | sort -nu | tail -n1)
+#
+#       	 while [ -z "$HEIGHT" ]
+#       	 do
+#                sleep 1
+#                HEIGHT=$(curl -s http://$SRV/api/peers | jq '.peers[].height' | sort -nu | tail -n1)
+#        	 done
 #}
 
-#local_height() {
- #       CHECKSRV=`curl -s "http://$SRV/api/loader/status/sync"| jq '.height'`
-#        while [ -z "$CHECKSRV" ]
- #       do
- #       sleep 1
- #               CHECKSRV=`curl -s "http://$SRV/api/loader/status/sync"| jq '.height'`
-#        done
-#        diff=$(( $HEIGHT - $CHECKSRV ))
-#        if [ "$diff" -gt "5" ]
-#        then
-     #           curl -s \
-   #     -X POST \
-  #      https://api.telegram.org/bot$apiToken/sendMessage \
-  #      -d text="$MESSAGE" \
-  #      -d chat_id=$CHATID
- #   fi
+#	local_height() {
+#       	 CHECKSRV=`curl -s "http://$SRV/api/loader/status/sync"| jq '.height'`
+#       	 while [ -z "$CHECKSRV" ]
+#        	 do
+#        sleep 1
+#                	CHECKSRV=`curl -s "http://$SRV/api/loader/status/sync"| jq '.height'`
+#        	 done
+#        	 diff=$(( $HEIGHT - $CHECKSRV ))
+#        	 if [ "$diff" -gt "5" ]
+#        	 then
+#                	curl -s \
+#        	        -X POST \
+#        		https://api.telegram.org/bot$apiToken/sendMessage \
+#        		-d text="$MESSAGE" \
+#        		-d chat_id=$CHATID
+#    		fi
 
-#}
+#		}
 
 			top_height
 			local_height
