@@ -19,14 +19,26 @@ This screen every 120 seconds should check if server is available and synced.
 
 `nano DposScript.sh`
 
-Modify the following:
+**Modify the following:**
 
 REMEMBER: Ensure you have permission to do api queries (whitelist the ip of the machine where this script is running, into the api section of dpos config)
+
+**How to retrieve chat id?**
+
+Open telegram and start @userinfobot
+
+**How to retrieve apiToken?**
+
+Open telegram and start @BotFather and follow instruction to create a bot (two or three clicks), after it will give you a token
+
+**How to retrieve PUSHBULLETTOKEN**?
+
+Go on https://www.pushbullet.com/signin?next=%2F and you will find it in your area, pushbullet is an optional
 
 ```SRV=IPSERVER:PORT
 MESSAGE="Server SERVERNAME Is not synced with the network"
 MEX="Server SERVERNAME Is DOWN"
-CHATID=CHATID
+CHATID=111111
 apiToken=TELEGRAMTOKEN
 
 TITLE="ATTENTION"
