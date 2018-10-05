@@ -21,7 +21,20 @@ This screen every 120 seconds should check if server is available and synced.
 
 **Modify the following:**
 
-REMEMBER: Ensure you have permission to do api queries (whitelist the ip of the machine where this script is running, into the api section of dpos config)
+REMEMBER: You have to whitelist the ip of the server where the bot is running into the server where the dpos-node is active.
+(Ex: lisk-main/config.json | shift/config.json 7
+
+
+  `"api": {
+        "enabled": true,
+        "access": {
+            "public": false,
+            "whiteList": ["127.0.0.1","10.0.2.1]
+            `                             ←
+                                        This is the bot server ip
+           
+                               
+            
 
 **How to retrieve chat id?**
 
