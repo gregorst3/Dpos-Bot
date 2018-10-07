@@ -13,7 +13,6 @@ If dpos uses an old core :
 wget https://raw.githubusercontent.com/gregorst3/Dpos-Bot/master/DposScript0.9.sh
 ```
 
-How to use this script:
 
 This script every 120 seconds should check if server is available and synced.
 
@@ -34,6 +33,8 @@ _Before we start, REMEMBER: You have to whitelist the ip of the server where the
 
 &nbsp;
 
+**How to use this script:**
+
 `nano DposScript.sh`
 &nbsp;
 
@@ -49,7 +50,7 @@ TITLE="ATTENTION"
 ACCESS_TOKEN="PUSHBULLETTOKEN"`
 Ctrl x + y
 ```
-&nbsp;
+
 
 **How to retrieve chat id?**
 
