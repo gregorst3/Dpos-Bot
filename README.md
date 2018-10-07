@@ -16,13 +16,8 @@ wget https://raw.githubusercontent.com/gregorst3/Dpos-Bot/master/DposScript0.9.s
 How to use this script:
 
 This script every 120 seconds should check if server is available and synced.
-
-`nano DposScript.sh`
-
 &nbsp;
-
-
-_REMEMBER: You have to whitelist the ip of the server where the bot is running into the server where the dpos-node is active.
+_Before we start, REMEMBER: You have to whitelist the ip of the server where the bot is running into the server where the dpos-node is active.
 (Ex: lisk-main/config.json | shift/config.json_
 
 &nbsp;
@@ -36,7 +31,7 @@ _REMEMBER: You have to whitelist the ip of the server where the bot is running i
                                         This is the bot server ip (10.0.2.1)    
 
 &nbsp;
-
+`nano DposScript.sh`
 **Modify the following:**
 
 ```SRV=IPSERVER:PORT
