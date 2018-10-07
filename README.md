@@ -16,8 +16,6 @@ wget https://raw.githubusercontent.com/gregorst3/Dpos-Bot/master/DposScript0.9.s
 
 This script every 120 seconds should check if server is available and synced.
 
-&nbsp;
-
 _Before we start, REMEMBER: You have to whitelist the ip of the server where the bot is running into the server where the dpos-node is active.
 (Ex: lisk-main/config.json | shift/config.json_
 
@@ -52,7 +50,7 @@ Ctrl x + y
 ```
 
 
-**How to retrieve chat id?**
+**How to retrieve CHATID?**
 
 Open telegram and start @userinfobot
 
@@ -60,7 +58,7 @@ Open telegram and start @userinfobot
 
 Open telegram and start @BotFather and follow instruction to create a bot (two or three clicks), after it will give you a token
 
-**How to retrieve PUSHBULLETTOKEN**?
+**How to retrieve ACCESS_TOKEN**?
 
 Go on https://www.pushbullet.com/#settings (Settings> Create Access token)
 
