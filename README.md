@@ -20,8 +20,12 @@ This script every 120 seconds should check if server is available and synced.
 `nano DposScript.sh`
 
 
+
+
 _REMEMBER: You have to whitelist the ip of the server where the bot is running into the server where the dpos-node is active.
 (Ex: lisk-main/config.json | shift/config.json_
+
+
 
 
   `"api": {
@@ -31,6 +35,8 @@ _REMEMBER: You have to whitelist the ip of the server where the bot is running i
             "whiteList": ["127.0.0.1","10.0.2.1]
             `                             ←
                                         This is the bot server ip (10.0.2.1)    
+
+
 
 **Modify the following:**
 
@@ -44,6 +50,8 @@ TITLE="ATTENTION"
 ACCESS_TOKEN="PUSHBULLETTOKEN"`
 Ctrl x + y
 ```
+
+
 **How to retrieve chat id?**
 
 Open telegram and start @userinfobot
