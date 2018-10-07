@@ -2,7 +2,7 @@
 
 This script has the function to check if your server is UP and SYNCED with the network, otherwise a notification, trough telegram (down or not synced) or trough pushbullet (server down), will be sent.
 
-Pre-Requirements:
+**Pre-Requirements:**
 
 ```
 sudo apt-get update && sudo apt-get install jq nano curl -y
@@ -19,10 +19,9 @@ This script every 120 seconds should check if server is available and synced.
 
 `nano DposScript.sh`
 
-**Modify the following:**
 
-REMEMBER: You have to whitelist the ip of the server where the bot is running into the server where the dpos-node is active.
-(Ex: lisk-main/config.json | shift/config.json 7
+_REMEMBER: You have to whitelist the ip of the server where the bot is running into the server where the dpos-node is active.
+(Ex: lisk-main/config.json | shift/config.json_
 
 
   `"api": {
@@ -31,11 +30,20 @@ REMEMBER: You have to whitelist the ip of the server where the bot is running in
             "public": false,
             "whiteList": ["127.0.0.1","10.0.2.1]
             `                             ←
-                                        This is the bot server ip (10.0.2.1)
-           
-                               
-            
+                                        This is the bot server ip (10.0.2.1)    
 
+**Modify the following:**
+
+```SRV=IPSERVER:PORT
+MESSAGE="Server SERVERNAME Is not synced with the network"
+MEX="Server SERVERNAME Is DOWN"
+CHATID=111111
+apiToken=TELEGRAMTOKEN
+
+TITLE="ATTENTION"
+ACCESS_TOKEN="PUSHBULLETTOKEN"`
+Ctrl x + y
+```
 **How to retrieve chat id?**
 
 Open telegram and start @userinfobot
@@ -48,16 +56,6 @@ Open telegram and start @BotFather and follow instruction to create a bot (two o
 
 Go on https://www.pushbullet.com/#settings (Settings> Create Access token)
 
-```SRV=IPSERVER:PORT
-MESSAGE="Server SERVERNAME Is not synced with the network"
-MEX="Server SERVERNAME Is DOWN"
-CHATID=111111
-apiToken=TELEGRAMTOKEN
-
-TITLE="ATTENTION"
-ACCESS_TOKEN="PUSHBULLETTOKEN"`
-Ctrl x + y
-```
 To start the script use 
 ```
 screen bash DposScript.sh
