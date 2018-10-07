@@ -5,7 +5,7 @@ This script has the function to check if your server is UP and SYNCED with the n
 Pre-Requirements:
 
 ```
-sudo apt-get update && sudo apt-get install jq -y
+sudo apt-get update && sudo apt-get install jq nano curl -y
 wget https://raw.githubusercontent.com/gregorst3/Dpos-Bot/master/DposScript.sh
 ```
 If dpos uses an old core :
@@ -31,7 +31,7 @@ REMEMBER: You have to whitelist the ip of the server where the bot is running in
             "public": false,
             "whiteList": ["127.0.0.1","10.0.2.1]
             `                             ←
-                                        This is the bot server ip
+                                        This is the bot server ip (10.0.2.1)
            
                                
             
