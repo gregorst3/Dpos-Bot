@@ -19,14 +19,13 @@ This script every 120 seconds should check if server is available and synced.
 
 `nano DposScript.sh`
 
-
+&nbsp;
 
 
 _REMEMBER: You have to whitelist the ip of the server where the bot is running into the server where the dpos-node is active.
 (Ex: lisk-main/config.json | shift/config.json_
 
-
-
+&nbsp;
 
   `"api": {
         "enabled": true,
@@ -36,7 +35,7 @@ _REMEMBER: You have to whitelist the ip of the server where the bot is running i
             `                             ←
                                         This is the bot server ip (10.0.2.1)    
 
-
+&nbsp;
 
 **Modify the following:**
 
@@ -50,7 +49,7 @@ TITLE="ATTENTION"
 ACCESS_TOKEN="PUSHBULLETTOKEN"`
 Ctrl x + y
 ```
-
+&nbsp;
 
 **How to retrieve chat id?**
 
