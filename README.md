@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/gregorst3/Dpos-Bot/master/DposScript0.9.s
 
 How to use this script:
 
-This screen every 120 seconds should check if server is available and synced.
+This script every 120 seconds should check if server is available and synced.
 
 `nano DposScript.sh`
 
@@ -46,7 +46,7 @@ Open telegram and start @BotFather and follow instruction to create a bot (two o
 
 **How to retrieve PUSHBULLETTOKEN**?
 
-Go on https://www.pushbullet.com/signin?next=%2F and you will find it in your area, pushbullet is an optional
+Go on https://www.pushbullet.com/#settings (Settings> Create Access token)
 
 ```SRV=IPSERVER:PORT
 MESSAGE="Server SERVERNAME Is not synced with the network"
@@ -62,4 +62,4 @@ To start the script use
 ```
 screen bash DposScript.sh
 ```
-If you use it for dpos with old core (<1.0) please use DposScript0.9.sh
+**If you use it for dpos with old core (<1.0) please use DposScript0.9.sh**
