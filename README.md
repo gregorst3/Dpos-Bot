@@ -33,7 +33,10 @@ _Before we start, REMEMBER: You have to whitelist the ip of the server where the
                                         This is the bot server ip (10.0.2.1)    
 
 &nbsp;
+
 `nano DposScript.sh`
+&nbsp;
+
 **Modify the following:**
 
 ```SRV=IPSERVER:PORT
